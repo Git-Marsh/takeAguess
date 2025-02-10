@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dokdo&display=swap");
+body {
+  font-family: "Dokdo", serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100vw;
+  background-color: inherit;
+  padding: 30px 0;
+  height: 150px;
+  z-index: 1;
+}
+nav > .container {
+  text-align: center;
+  width: 100%;
+}
+nav > .container > h1 {
+  font-size: 5rem;
+}
+
+main > .container {
+  height: 80vh;
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid salmon;
+  background-color: rgba(250, 128, 114, 0.104);
+  padding: 20px;
+  border-radius: 24px;
+}
+main > .container > img {
+  width: 25rem;
+  height: 22rem;
+}
+main > .container > div:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+main > .container > div:nth-child(2) > br {
+  display: none;
+}
+
+main > .container > #main-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+main > .container > #main-text:last-child > div {
+  display: flex;
+}
+
+main > .container .input-style {
+  width: 463px;
+  padding-left: 30%;
+  border-radius: 24px;
+  border: none;
+  border: 3px solid salmon;
+}
+main > .container button {
+  background-color: inherit;
+  border-radius: 24px;
+}
+@media screen and (max-width: 992px) {
+  main > .container > div:nth-child(2) {
+    font-size: 2.5rem;
+    position: relative;
+    top: -50px;
+  }
+  main > .container > #main-text {
+    font-size: 1.8rem;
+    position: relative;
+    top: -30px;
+  }
+  main > .container .input-style {
+    width: 263px;
+  }
+  main > .container > div:nth-child(2) > br {
+    display: block;
+  }
+}
+@media screen and (max-width: 575px) {
+  main > .container > img {
+    width: 70%;
+  }
+  nav > .container > h1 {
+    font-size: 3.5rem;
+  }
+  main > .container > div:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  main > .container .input-style {
+    width: 163px;
+    padding-left: 25%;
+  }
+}
