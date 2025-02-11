@@ -29,7 +29,7 @@ goBtn.addEventListener(`click`, Play);
 retryBtn.addEventListener(`click`, Retry);
 userInput.addEventListener(`focus`, () => {
   userInput.value = ``;
-});
+}); //익명의 함수는 화살표 함수로 적을 수 있음
 
 function Play() {
   const userValue = userInput.value;
@@ -66,7 +66,6 @@ function Play() {
 
   inputList.push(userInput.value);
   //   if (inputList == userValue) {
-  //     console.log(`ㅗㄷㅅ`);
   //   } 유효성 검사는 위에 해야지. 이미 입력함? 돌아가. 안 함? 일로와.
 
   if (chances < 1) {
@@ -85,7 +84,7 @@ function Retry() {
   chances = 5;
 
   userInput.value = ``;
-  Result.textContent = `괜찮아. 다시 해 봐.`;
+  Result.textContent = `괜찮아. 다시 해봐.`;
   goBtn.disabled = false;
   userChances.textContent = `이번에도 기회는 5번!`;
   MainImg.src =
